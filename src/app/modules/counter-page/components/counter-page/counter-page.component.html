@@ -1,0 +1,6 @@
+<div class="counters">
+  <app-counter [counter$]="counterService.counter$" [_counter$]="counterService._counter$"></app-counter>
+  <app-counter [counter$]="counterService.counter1$" [_counter$]="counterService._counter1$"></app-counter>
+</div>
+
+<div class="total">Total: {{ totalCounter$ | async }}</div>
